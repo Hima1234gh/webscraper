@@ -1,5 +1,4 @@
 import requests #type: ignore
-import re
 from bs4 import BeautifulSoup #type: ignore
 
 
