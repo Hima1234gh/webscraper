@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interactive Web Scraper</title>
+    <link rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}?v=2">
+
+</head>
+<body>
+
+<div class="container">
+    <h2>Web Scraper</h2>
+
+    <input id="url" placeholder="Enter website URL">
+    <button onclick="fetchTags()">Fetch Tags</button>
+
+    <select id="tag" onchange="updateClasses()"></select>
+    <select id="class"></select>
+
+    <button onclick="scrape()">Scrape</button>
+
+    <ul id="output"></ul>
+</div>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
